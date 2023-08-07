@@ -1,7 +1,7 @@
 <mvc:View controllerName="jdv.controller.jogo2"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
     xmlns="sap.m">
-    <Page id="page" title="{i18n>title}">
+    <Page id="page" title="Humano contra humano">
         <content>
             <VBox>
                 <HBox justifyContent = "Center">

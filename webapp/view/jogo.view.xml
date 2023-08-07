@@ -1,7 +1,7 @@
 <mvc:View controllerName="jdv.controller.jogo"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
     xmlns="sap.m">
-    <Page id="page" title="{i18n>title}">
+    <Page id="page" title="Humano contra robô">
         <content>
             <VBox>
                 <HBox justifyContent = "Center">
@@ -20,7 +20,7 @@
                         <items>
                             <ColumnListItem>
                                 <cells>
-                                    <Label text="{i18n>Vitórias de X:}" design="Bold"/>
+                                    <Label text="{i18n>Humano:}" design="Bold"/>
                                     <Label text="" textAlign="Center" design="Bold"/>
                                 </cells>
                             </ColumnListItem>
@@ -32,7 +32,7 @@
                             </ColumnListItem>
                             <ColumnListItem>
                                 <cells>
-                                    <Label text="{i18n>Vitórias de O:}" design="Bold"/>
+                                    <Label text="{i18n>Robô:}" design="Bold"/>
                                     <Label text="" textAlign="Center" design="Bold"/>
                                 </cells>
                             </ColumnListItem>
