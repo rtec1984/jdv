@@ -1,0 +1,72 @@
+<mvc:View controllerName="jdv.controller.jogo"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <VBox>
+                <HBox justifyContent = "Center">
+                    <Button text="{i18n>Resetar o placar}" press = "onResetPlacar" class="sapUiTinyMarginEnd"></Button>
+                </HBox> 
+                <FlexBox justifyContent="Center">
+                    <Table id="placarTabela" width = "465px" class="sapUiTinyMarginEnd">
+                        <columns>
+                            <Column>
+                                <Label text="" design="Bold"/>
+                            </Column>
+                            <Column hAlign="Center">
+                                <Label text="" design="Bold"/>
+                            </Column>
+                        </columns>
+                        <items>
+                            <ColumnListItem>
+                                <cells>
+                                    <Label text="{i18n>Vitórias de X:}" design="Bold"/>
+                                    <Label text="" textAlign="Center" design="Bold"/>
+                                </cells>
+                            </ColumnListItem>
+                            <ColumnListItem>
+                                <cells>
+                                    <Label text="{i18n>Empates:}" design="Bold"/>
+                                    <Label text="" textAlign="Center" design="Bold"/>
+                                </cells>
+                            </ColumnListItem>
+                            <ColumnListItem>
+                                <cells>
+                                    <Label text="{i18n>Vitórias de O:}" design="Bold"/>
+                                    <Label text="" textAlign="Center" design="Bold"/>
+                                </cells>
+                            </ColumnListItem>
+                            <ColumnListItem>
+                                <cells>
+                                    <Label text="{i18n>Número de jogos:}" design="Bold"/>
+                                    <Label text="" textAlign="Center" design="Bold"/>
+                                </cells>
+                            </ColumnListItem>
+                            <ColumnListItem>
+                                <cells>
+                                    <Label text="" design="Bold"/>
+                                    <Label text="" textAlign="Center" design="Bold"/>
+                                </cells>
+                            </ColumnListItem>
+                        </items>
+                    </Table>
+                </FlexBox>              
+                <HBox justifyContent="Center">
+                    <Image id="casa1" src="..\img\w.png" class="sapUiTinyMarginEnd" press="onClickCasa"/>
+                    <Image id="casa2" src="..\img\w.png" class="sapUiTinyMarginEnd" press="onClickCasa"/>
+                    <Image id="casa3" src="..\img\w.png" class="sapUiTinyMarginEnd" press="onClickCasa"/>
+                </HBox>
+                <HBox justifyContent="Center">
+                    <Image id="casa4" src="..\img\w.png" class="sapUiTinyMarginEnd" press="onClickCasa"/>
+                    <Image id="casa5" src="..\img\w.png" class="sapUiTinyMarginEnd" press="onClickCasa"/>
+                    <Image id="casa6" src="..\img\w.png" class="sapUiTinyMarginEnd" press="onClickCasa"/>
+                </HBox>
+                <HBox justifyContent="Center">
+                    <Image id="casa7" src="..\img\w.png" class="sapUiTinyMarginEnd" press="onClickCasa"/>
+                    <Image id="casa8" src="..\img\w.png" class="sapUiTinyMarginEnd" press="onClickCasa"/>
+                    <Image id="casa9" src="..\img\w.png" class="sapUiTinyMarginEnd" press="onClickCasa"/>
+                </HBox>
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>

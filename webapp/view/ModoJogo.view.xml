@@ -1,0 +1,23 @@
+<mvc:View
+    controllerName="jdv.controller.ModoJogo"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc">
+    <Page title="Escolha o modo de jogo:">
+        <content>
+            <FlexBox justifyContent="Center">
+            <List>
+                <items>
+                    <StandardListItem
+                        title="Jogar contra humano"
+                        type="Navigation"
+                        press="onJogadorContraJogador"/>
+                    <StandardListItem
+                        title="Jogar contra robô"
+                        type="Navigation"
+                        press="onJogadorContraRobo"/>
+                </items>
+            </List>
+        </FlexBox>
+        </content>
+    </Page>
+</mvc:View>
